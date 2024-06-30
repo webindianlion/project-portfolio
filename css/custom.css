@@ -6,7 +6,12 @@ a{
     text-decoration: none;
     color: inherit;
 }
-
+.project-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
 .project-list-cont {
     display: flex;
     justify-content: center;
@@ -19,18 +24,24 @@ a{
     border-radius: 5px;
 }
 .project-list-item {
-    padding: 5px;
     border-bottom: 1px solid #ddd;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin: 1%;
+    padding: 10px 20px;
+    width: 31%;
 }
 .project-list-item h3 {
     font-size: 14px;
 }
 
 
-
+@media only screen and (max-width:768px) {
+    .project-list-item {     
+        width: 47%;
+    }
+}
 
 
 
