@@ -6,6 +6,12 @@ a{
     text-decoration: none;
     color: inherit;
 }
+header{border-bottom: 1px solid #85cff3; border-top: 5px solid #85cff3; font-size: 12px; padding: 15px;}
+header nav { max-width: 880px; margin: auto; display: flex; justify-content: end;}
+header ul { display: flex; padding: 0; margin: 0;}
+header li { list-style-type: none; padding: 0 10px;}
+h1.main-ttl,.name-ttl {font-size: 30px;}
+
 .project-list {
     display: flex;
     flex-direction: row;
@@ -16,32 +22,36 @@ a{
     display: flex;
     justify-content: center;
 }
-.project-list-cont .ttl{
-    background-color: #0d6efd;
-    color: #fff;
+.project-list-cont .ttl {
+    color: #000000;
     font-size: 24px;
-    padding: 10px;
-    border-radius: 5px;
+    padding: 10px 0;
+    border-bottom: 5px solid #85cff3;
+    margin-bottom: 30px;
 }
 .project-list-item {
-    border-bottom: 1px solid #ddd;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 1%;
-    padding: 10px 20px;
+    padding: 5px 0px;
     width: 31%;
+    text-decoration: underline;
 }
 .project-list-item h3 {
     font-size: 14px;
+    font-weight: 400;
 }
-
+footer{
+    height: 50px;
+    background: #85cff3;
+}
 
 @media only screen and (max-width:768px) {
     .project-list-item {     
         width: 47%;
     }
 }
+
 
 
 
